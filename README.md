@@ -90,8 +90,8 @@ php artisan db:seed
 | attendance_id | bigint |  |  | ◯ | attendances(id) |
 | attendance_request_start_time | varchar(255) |  |  |  |  |
 | attendance_request_end_time | varchar(255) |  |  |  |  |
-| remarks | varchar(255) |  |  | ○ |  |
-| status | varchar(255) |  |  | ○ |  |
+| remarks | varchar(255) |  |  | ◯ |  |
+| status | varchar(255) |  |  | ◯ |  |
 | created_at | timestamp |  |  |  |  |
 | updated_at | timestamp |  |  |  |  |
 
@@ -106,8 +106,8 @@ php artisan db:seed
 | rest_id | bigint |  |  | ◯ | rests(id) |
 | rest_request_start_time | varchar(255) |  |  |  |  |
 | rest_request_end_time | varchar(255) |  |  |  |  |
-| remarks | varchar(255) |  |  | ○ |  |
-| status | varchar(255) |  |  | ○ |  |
+| remarks | varchar(255) |  |  | ◯ |  |
+| status | varchar(255) |  |  | ◯ |  |
 | created_at | timestamp |  |  |  |  |
 | updated_at | timestamp |  |  |  |  |
 
