@@ -1,0 +1,180 @@
+.list {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0eff2;
+    text-align: center;
+}
+.list__inner {
+    width: 95%;
+    margin: 0 auto;
+}
+.list__title {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: 5px #000 solid;
+}
+.list__index {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.calendar {
+    display: flex;
+    text-align: center;
+}
+.calendar__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.page__link {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+}
+.previous-month {
+    margin-left: 20px;
+}
+.previous-month::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    background: url(../../img/mark-left.png) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    transform: translate(0, -50%);
+}
+.next-month {
+    margin-right: 20px;
+}
+.next-month::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    background: url(../../img/mark-left.png) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    transform: translate(0, -50%) scale(-1, 1);
+}
+.list__tab {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-bottom: #000 1px solid;
+}
+.tab__link {
+    margin: 5px 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.active {
+    font-weight: bold;
+}
+
+.list__table {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+.table__header {
+    border-bottom: #f0eff2 3px solid;
+}
+.table__header th {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 11px;
+}
+.table__data {
+    border-bottom: #f0eff2 2px solid;
+}
+.table__data td {
+    padding: 10px;
+    font-size: 12px;
+}
+.detail-link {
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.export {
+    text-align: right;
+}
+.export__button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .list__inner {
+        width: 70%;
+    }
+    .list__title {
+        margin-top: 40px;
+        font-size: 24px;
+        padding-left: 15px;
+        border-left: 8px #000 solid;
+    }
+    .list__index {
+        margin-top: 30px;
+        padding: 10px 20px;
+    }
+    .page__link {
+        font-size: 16px;
+    }
+    .previous-month::before {
+        right: 40px;
+    }
+    .next-month::after {
+        left: 40px;
+    }
+    .list__tab {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    .tab__link {
+        margin: 10px 30px;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .list__table {
+        margin-top: 30px;
+    }
+    .table__header th {
+        font-size: 14px;
+    }
+    .table__data td {
+        font-size: 14px;
+    }
+    .export__button {
+        margin: 20px 0;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

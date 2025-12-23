@@ -1,0 +1,159 @@
+.attendance__detail {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0eff2;
+    text-align: center;
+}
+.detail__inner {
+    width: 95%;
+    margin: 0 auto;
+}
+.detail__title {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: 5px #000 solid;
+}
+.detail__table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.table__row {
+    border-bottom: #f0eff2 2px solid;
+}
+.table__row th {
+    width: 30%;
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+}
+.table__row td {
+    width: 60%;
+    padding: 10px 20px;
+    text-align: left;
+}
+.name__input {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.date__input {
+    width: 40%;
+    border: none;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.time__input {
+    padding: 2px 5px;
+    border: #E1E1E1 1px solid;
+    border-radius: 4px;
+    position: relative;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.time__input:first-child {
+    margin-left: 0;
+}
+.time__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    opacity: 0;
+}
+.remarks__textarea {
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
+    border: #E1E1E1 1px solid;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.time__input:focus, .remarks__textarea:focus {
+    outline: #000 1px solid;
+}
+.form__button {
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
+.submit {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.approved__button {
+    display: inline-block;
+    background-color: #696969;
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.readonly {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.no-left-margin {
+    margin-left: 0;
+}
+.readonly--remarks {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.unable__text {
+    color: #ff0000;
+    text-align: right;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .detail__inner {
+        width: 70%;
+    }
+    .detail__title {
+        margin-top: 40px;
+        font-size: 24px;
+        padding-left: 15px;
+        border-left: 8px #000 solid;
+    }
+    .detail__table {
+        margin-top: 50px;
+    }
+    .table__row th {
+        width: 25%;
+        padding: 20px 50px;
+        font-size: 14px;
+    }
+    .time__input {
+        margin: 0 30px;
+        padding: 3px 20px;
+    }
+    .remarks__textarea {
+        width: 55%;
+    }
+    .readonly {
+        margin: 0 50px;
+    }
+    .no-left-margin {
+        margin-left: 0;
+    }
+    .unable__text {
+        font-size: 14px;
+    }
+}

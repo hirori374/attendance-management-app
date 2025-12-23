@@ -1,0 +1,80 @@
+.stamping {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f0eff2;
+    text-align: center;
+}
+.stamping__status {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #C8C8C8;
+    border-radius: 50px;
+    font-size: 12px;
+}
+.stamping__date {
+    margin: 10px;
+    font-size: 18px;
+}
+.stamping__time {
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.stamping__button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.stamping__button-submit {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.button--attendance {
+    background-color: #000;
+    color: #fff;
+}
+.button--rest {
+    background-color: #fff;
+    color: #000;
+}
+.attendance-end__message {
+    margin: 10px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .stamping__status {
+        margin-top: 50px;
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    .stamping__date {
+        margin: 20px;
+        font-size: 30px;
+    }
+    .stamping__time {
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    .stamping__button {
+        margin: 50px;
+    }
+    .stamping__button-submit {
+        width: 200px;
+        margin: 30px;
+        padding: 15px 0;
+        border-radius: 20px;
+        font-size: 30px;
+    }
+    .attendance-end__message {
+        font-size: 20px;
+    }
+}

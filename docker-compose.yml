@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   nginx:
@@ -10,11 +10,27 @@ services:
       - ./src:/var/www/
     depends_on:
       - php
+    networks:
+      - app-network
+
+  mailhog:
+      image: mailhog/mailhog
+      ports:
+        - "1025:1025"
+        - "8025:8025"
+      networks:
+      - app-network
 
   php:
     build: ./docker/php
     volumes:
       - ./src:/var/www/
+    depends_on:
+      - mailhog
+      - mysql
+    networks:
+      - app-network
+
 
   mysql:
     image: mysql:8.0.26
@@ -28,6 +44,8 @@ services:
     volumes:
       - ./docker/mysql/data:/var/lib/mysql
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    networks:
+      - app-network
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -40,3 +58,9 @@ services:
       - mysql
     ports:
       - 8080:80
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
