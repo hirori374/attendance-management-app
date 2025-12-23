@@ -4,14 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Carbon\Carbon;
-use App\Models\User;
 use App\Models\Attendance;
 use App\Models\Rest;
 use App\Models\AttendanceCorrection;
 use App\Models\RestCorrection;
 use App\Http\Requests\CorrectionRequest;
-use Illuminate\Support\Facades\Auth;
 use App\Services\AttendanceService;
 
 class CorrectionController extends Controller

@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\ListController;
 use App\Http\Controllers\CorrectionController;
-use App\Http\Controllers\Admin\ListController as AdminListController;
-use App\Http\Controllers\Admin\CorrectionController as AdminCorrectionController;
-use App\Http\Controllers\Admin\StaffController as AdminStaffController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 

@@ -4,7 +4,6 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use App\Http\Requests\CorrectionRequest;
-use Illuminate\Support\Facades\Validator;
 
 class CorrectionRequestTest extends TestCase
 {
